@@ -1,6 +1,6 @@
 # Fractal Antenna Design for Wireless Power Transfer Application
 
-[![Python Application CI](https://github.com/akashveeramuthu07/fractal-antenna-wpt/workflows/Python%20Application%20CI/badge.svg)](#)
+[![Python Application CI](https://github.com/AKASHAGAR-07/Fractal-Antenna-Design-for-Wireless-Power-Transfer-Application/workflows/Python%20Application%20CI/badge.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An industry-level, publication-grade repository presenting the complete design, analysis, simulation, and hardware specification of a **Hexagonal Fractal Microstrip Patch Antenna** operating in the **2.4 GHz ISM Band** for **Wireless Power Transfer (WPT)** systems.
@@ -89,8 +89,8 @@ Python tools are provided in the `src/` directory to calculate microstrip parame
 Make sure you have Python 3.8+ installed. Set up your environment and dependencies:
 ```bash
 # Clone the repository
-git clone https://github.com/akashveeramuthu07/fractal-antenna-wpt.git
-cd fractal-antenna-wpt
+git clone https://github.com/AKASHAGAR-07/Fractal-Antenna-Design-for-Wireless-Power-Transfer-Application.git
+cd Fractal-Antenna-Design-for-Wireless-Power-Transfer-Application
 
 # Install requirements
 pip install numpy matplotlib
