@@ -1,0 +1,62 @@
+================================================================================
+Autodesk Fusion 360 Sketch Coordinates - WPT Fractal Antenna
+================================================================================
+
+This document contains the exact coordinates for the 2D sketch profiles to draw 
+the patch and slots in Autodesk Fusion 360.
+
+1. SKETCH PLANE: XY Plane
+   - Center Origin: (X=0.00, Y=25.00) mm
+   - Note: The substrate starts at Y=0.00 and extends to Y=49.41.
+     The patch center is placed at Y=25.00 to keep it centered on the substrate.
+
+2. RADIATING PATCH OUTER BOUNDARY (Iteration 0)
+   - Polygon Type: Circumscribed
+   - Center: (0.00, 25.00) mm
+   - Outer Vertex Radius (Side length e): 17.39 mm
+   - Vertices:
+     * V1: (17.39, 25.00)
+     * V2: (8.70, 40.06)
+     * V3: (-8.70, 40.06)
+     * V4: (-17.39, 25.00)
+     * V5: (-8.70, 9.94)
+     * V6: (8.70, 9.94)
+
+3. CENTRAL HEXAGONAL SLOT (Iteration 1)
+   - Polygon Type: Circumscribed
+   - Center: (0.00, 25.00) mm
+   - Radius: 5.80 mm (1/3 of outer radius)
+   - Vertices:
+     * S1: (5.80, 25.00)
+     * S2: (2.90, 30.02)
+     * S3: (-2.90, 30.02)
+     * S4: (-5.80, 25.00)
+     * S5: (-2.90, 19.98)
+     * S6: (2.90, 19.98)
+
+4. SECONDARY HEXAGONAL SLOTS (Iteration 2)
+   - Polygon Type: Circumscribed
+   - Radius: 1.93 mm (1/9 of outer radius)
+   - Slots are centered on the vertices of an intermediate hexagon of radius 8.70 mm:
+     * Slot 2A Center: (8.70, 25.00)
+     * Slot 2B Center: (4.35, 32.53)
+     * Slot 2C Center: (-4.35, 32.53)
+     * Slot 2D Center: (-8.70, 25.00)
+     * Slot 2E Center: (-4.35, 17.47)
+     * Slot 2F Center: (4.35, 17.47)
+
+5. MICROSTRIP FEEDLINE
+   - Rectangle (2-Point)
+   - Corner 1: (-1.50, 0.00) mm
+   - Corner 2: (1.50, 6.64) mm
+   - This creates a feedline of Width = 3.00 mm (c) and Length = 6.64 mm (d),
+     connecting from the edge of the substrate directly to the bottom edge
+     of the hexagonal patch.
+
+================================================================================
+EXPORT INSTRUCTIONS:
+- Click the sketch node in the Browser hierarchy, right-click, and select "Save As DXF" for import.
+- Or Extrude the profile (patch - slots) by 0.05 mm (direction: New Body).
+- Extrude feedline by 0.05 mm (Join).
+- Go to File -> Export, select STEP (.step) or IGES (.iges) and save to your desktop.
+================================================================================

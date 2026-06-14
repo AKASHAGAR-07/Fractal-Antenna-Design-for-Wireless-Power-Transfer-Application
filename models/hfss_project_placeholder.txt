@@ -1,0 +1,83 @@
+================================================================================
+ANSYS HFSS Simulation Construction Step-by-Step Guide
+================================================================================
+
+This document guides you through setting up the simulation in ANSYS HFSS (High Frequency 
+Structure Simulator) using the graphical user interface.
+
+--------------------------------------------------------------------------------
+1. PROJECT INITIALIZATION
+--------------------------------------------------------------------------------
+1. Open ANSYS Electronics Desktop.
+2. File -> New. A project named "Project1" will be created.
+3. Click "Insert HFSS Design" (the HFSS icon in the toolbar).
+4. Rename design: Right-click "HFSSDesign1" -> Rename -> "Hexagonal_Fractal_WPT".
+5. Set Model Units: Modeler -> Units -> Select "mm" -> OK.
+
+--------------------------------------------------------------------------------
+2. CAD IMPORT & LAYER ASSIGNMENT
+--------------------------------------------------------------------------------
+1. File -> Import -> Select the STEP file exported from Fusion 360.
+2. In the Modeler tree, select the imported bodies:
+   - Assign Material to the patch/feedline: Double-click properties -> Change Material 
+     to "copper" -> Set Solve Inside = Checked.
+3. Create Substrate:
+   - Draw Box -> Name it "Substrate".
+   - Double-click properties -> Set material to "FR4_epoxy" -> Color = Green -> Transparency = 0.4.
+   - Position: Start X = -20.845, Start Y = 0, Start Z = 0
+   - Dimensions: Size X = 41.69, Size Y = 49.41, Size Z = 1.575
+4. Create Ground Plane:
+   - Draw Box -> Name it "GroundPlane".
+   - Double-click properties -> Set material to "pec" -> Color = Grey -> Transparency = 0.1.
+   - Position: Start X = -20.845, Start Y = 0, Start Z = -0.07
+   - Dimensions: Size X = 41.69, Size Y = 49.41, Size Z = 0.07
+
+--------------------------------------------------------------------------------
+3. EXCITATION & PORT DEFINITION
+--------------------------------------------------------------------------------
+1. Select the ZX Plane in the toolbar.
+2. Draw a rectangle at the feed end (Y = 0):
+   - Position: Start X = -1.5, Start Y = 0, Start Z = 0
+   - Dimensions: Size X = 3.0, Size Y = 0 (sheet is in ZX plane), Size Z = 1.575
+   - Name the sheet "PortSheet".
+3. Assign Lumped Port:
+   - Right-click "PortSheet" -> Assign Excitation -> Lumped Port.
+   - Set Port Name to "P1" -> Resistance = 50 Ohm -> Next.
+   - Integration Line -> Select "New Line".
+   - Click at bottom center of PortSheet (0, 0, 0) and drag to top center (0, 0, 1.575) -> Finish.
+
+--------------------------------------------------------------------------------
+4. BOUNDARY CONDITIONS
+--------------------------------------------------------------------------------
+1. Perfect E (Conducting surfaces):
+   - Select the patch geometry -> Right-click -> Assign Boundary -> Perfect E.
+   - Select the ground plane geometry -> Right-click -> Assign Boundary -> Perfect E.
+2. Radiation Box:
+   - Draw Box -> Name it "RadBox" -> Material = "vacuum" -> Transparency = 0.9.
+   - Position: Start X = -55, Start Y = -35, Start Z = -35
+   - Dimensions: Size X = 110, Size Y = 120, Size Z = 70
+   - Select RadBox -> Right-click -> Assign Boundary -> Radiation.
+
+--------------------------------------------------------------------------------
+5. ANALYSIS SETUP & FREQUENCY SWEEP
+--------------------------------------------------------------------------------
+1. Right-click "Analysis" in project tree -> Add Solution Setup -> Advanced.
+   - Setup Name: "Setup1"
+   - Resonant Frequency: 2.4 GHz
+   - Maximum Number of Passes: 20
+   - Maximum Delta S: 0.02
+2. Right-click "Setup1" -> Add Frequency Sweep.
+   - Sweep Type: Interpolating
+   - Frequency Setup: Linear Count -> Start = 1.0 GHz, Stop = 4.0 GHz, Count = 301
+   - Save Fields: Checked (for plotting radiation patterns)
+
+--------------------------------------------------------------------------------
+6. RUN & RESULTS EXPORT
+--------------------------------------------------------------------------------
+1. HFSS -> Validation Check (make sure all icons are green checks).
+2. HFSS -> Analyze All.
+3. Post-Processing:
+   - S11: Right-click Results -> Create Terminal Report -> Rectangular Plot -> Select S(Terminal1,Terminal1) in dB.
+   - VSWR: Right-click Results -> Create Terminal Report -> Rectangular Plot -> Select VSWR(Terminal1).
+   - Radiation Patterns: Right-click Results -> Create Far Fields Report -> 2D Polar Plot -> Select GainTotal for E-plane (Phi=0) and H-plane (Phi=90).
+================================================================================
