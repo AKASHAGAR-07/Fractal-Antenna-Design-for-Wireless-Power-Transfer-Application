@@ -8,6 +8,8 @@ based on the simulation data presented in the project report.
 import os
 import math
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')  # Set non-interactive backend for headless CI
 import matplotlib.pyplot as plt
 
 
