@@ -19,8 +19,8 @@ import math
 try:
     import ScriptEnv
     # Initialize the desktop object
-    oAnsoftApp.SetCurrentProject("WPT_Fractal_Antenna")
-    oDesktop = oAnsoftApp.GetAppDesktop()
+    oAnsoftApp.SetCurrentProject("WPT_Fractal_Antenna")  # noqa: F821
+    oDesktop = oAnsoftApp.GetAppDesktop()  # noqa: F821
     oProject = oDesktop.NewProject()
     oProject.InsertDesign("HFSS", "Hexagonal_Fractal_Design", "Driven Terminal")
     oDesign = oProject.GetActiveDesign()
