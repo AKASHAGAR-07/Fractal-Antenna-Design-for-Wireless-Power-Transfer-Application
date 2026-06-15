@@ -29,19 +29,31 @@ Return loss represents the amount of power reflected back to the source due to i
   $$\text{Reflected Power (\%)} = |\Gamma|^2 \times 100 \approx 0.004\%$$
 * Consequently, **$99.996\%$** of the power is successfully accepted by the antenna, making it highly efficient for wireless power harvesting/transmission.
 
+![Return Loss (S11) vs Frequency](img/fig_5_1_return_loss.png)
+
 ### 2. Voltage Standing Wave Ratio (VSWR)
 VSWR measures the impedance mismatch between the transmission line and the antenna.
 * The simulated VSWR is **$1.13$** at $2.4\text{ GHz}$.
 * Since $1.0 \le \text{VSWR} \le 1.5$ is considered excellent in RF engineering, this confirms that the microstrip feedline configuration ($3.00\text{ mm}$ width) successfully matches the patch to the standard $50\,\Omega$ coaxial connector interface.
+
+![Voltage Standing Wave Ratio (VSWR) Plot](img/fig_5_2_vswr.png)
 
 ### 3. E-Plane Radiation Pattern (Electric Field)
 * **Characteristics**: Symmetrical bidirectional pattern along the elevation plane (Theta coordinate).
 * **Gain Major Lobe**: Features a peak gain directed perpendicular to the patch, optimizing broadside radiation efficiency.
 * **Beamwidth**: Symmetrical 3dB beamwidth of approximately $68^\circ$, which minimizes interference from surrounding metallic boundaries.
 
+| 2D E-Plane Radiation Pattern | Gain Plot E-Plane |
+| :---: | :---: |
+| ![2D Polar E-Plane Pattern](img/fig_5_3_radiation_e_plane.png) | ![Gain Plot E-Plane](img/fig_5_4_gain_e_plane.png) |
+
 ### 4. H-Plane Radiation Pattern (Magnetic Field)
 * **Characteristics**: Near-omnidirectional profile along the azimuth plane (Phi coordinate).
 * **Significance**: For Wireless Power Transfer (WPT) applications, an omnidirectional H-plane is highly beneficial, as it allows the receiving rectenna to capture magnetic field fields and transmit power regardless of orientation/angle.
+
+| 2D H-Plane Radiation Pattern | 3D Polar Plot H-Plane |
+| :---: | :---: |
+| ![2D Polar H-Plane Pattern](img/fig_5_5_radiation_h_plane.png) | ![3D Polar H-Plane](img/fig_5_6_polar_h_plane.png) |
 
 ---
 

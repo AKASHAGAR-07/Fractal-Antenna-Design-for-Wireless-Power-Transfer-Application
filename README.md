@@ -14,8 +14,13 @@ This project was developed as a Bachelor of Engineering (B.E.) Final Year Projec
 Wireless Power Transfer (WPT) systems require compact, high-performance, and efficient antennas. Traditional patch antennas are often too large or suffer from narrow bandwidths. This project utilizes **fractal geometry** (iterative self-similar slotting) on a **hexagonal patch structure** to:
 - Increase the electrical length of the patch without increasing its physical footprint.
 - Enhance impedance matching, resulting in an exceptional return loss ($S_{11}$) of **$-44\text{ dB}$** at **$2.4\text{ GHz}$**.
-- Keep the Voltage Standing Wave Ratio (VSWR) between **$1.2$ and $1.5$** (ideal value is $1.0$).
+- Keep the Voltage Standing Wave Ratio (VSWR) around **$1.13$** at resonance.
 - Offer a highly symmetrical directional E-plane and near-omnidirectional H-plane radiation pattern.
+
+| Proposed Simulation Design | Fabricated Hardware Prototype |
+| :---: | :---: |
+| ![Proposed Simulation Design](docs/img/fig_4_5_proposed_antenna_design.png) | ![Fabricated Hardware Prototype](docs/img/fig_4_6_fabricated_front.png) |
+
 
 ---
 
@@ -72,12 +77,21 @@ The design parameters are tailored for low-cost, high-reliability fabrication:
 ### 1. Return Loss ($S_{11}$)
 At the operating frequency of $2.4\text{ GHz}$, the antenna achieves a simulated return loss of **$-44\text{ dB}$**, indicating extremely low power reflections (less than $0.01\%$) and optimal energy delivery.
 
+![Return Loss S11 vs Frequency](docs/img/fig_5_1_return_loss.png)
+
 ### 2. VSWR
-The Voltage Standing Wave Ratio is simulated to be **$1.2\text{ to }1.5$** at the $2.4\text{ GHz}$ band, ensuring excellent impedance matching to a $50\,\Omega$ coaxial connector.
+The Voltage Standing Wave Ratio is simulated to be **$1.13$** at the $2.4\text{ GHz}$ band, ensuring excellent impedance matching to a $50\,\Omega$ coaxial connector.
+
+![VSWR Plot](docs/img/fig_5_2_vswr.png)
 
 ### 3. Radiation Patterns
 - **E-Plane (Electric Field)**: Highly symmetrical directional pattern around the major lobe, maximizing spatial gain.
 - **H-Plane (Magnetic Field)**: Near-omnidirectional profile, which is highly favorable for flexible power transfer alignments.
+
+| E-Plane Pattern | H-Plane Pattern |
+| :---: | :---: |
+| ![E-Plane Radiation](docs/img/fig_5_3_radiation_e_plane.png) | ![H-Plane Radiation](docs/img/fig_5_5_radiation_h_plane.png) |
+
 
 ---
 

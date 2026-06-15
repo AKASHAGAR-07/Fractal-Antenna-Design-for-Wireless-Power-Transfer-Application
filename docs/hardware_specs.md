@@ -69,5 +69,10 @@ To translate the simulated design into physical hardware:
 
 ## 📸 Fabricated Prototype Reference
 As described in Section 4.2.7 of the project report, the antenna was fabricated using standard single-sided PCB milling / photo-lithography:
-- **Front View**: Features the copper hexagonal patch with nested self-similar slots (fractal iteration) fed by a 50-ohm microstrip feedline connected to a brass SMA edge launcher.
-- **Back View**: Features the uniform, unbroken PEC copper ground plane, ensuring a solid return path for electrical currents and minimizing back radiation.
+*   **Front View**: Features the copper hexagonal patch with nested self-similar slots (fractal iteration) fed by a 50-ohm microstrip feedline connected to a brass SMA edge launcher.
+*   **Back View**: Features the uniform, unbroken PEC copper ground plane, ensuring a solid return path for electrical currents and minimizing back radiation.
+
+| Fabricated Antenna Front View | Fabricated Antenna Back View |
+| :---: | :---: |
+| ![Fabricated Antenna Front](img/fig_4_6_fabricated_front.png) | ![Fabricated Antenna Back](img/fig_4_7_fabricated_back.png) |
+

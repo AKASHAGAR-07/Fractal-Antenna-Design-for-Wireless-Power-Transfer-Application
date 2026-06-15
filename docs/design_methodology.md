@@ -82,3 +82,10 @@ graph LR
 * **Description**: Secondary, smaller hexagonal slots are subtracted along the vertices or adjacent edges.
 * **Scale Factor ($k_2$)**: $1/9$ ($1.93\text{ mm}$).
 * **Behavior**: Greatly increases the capacitive loading and edge complexity. This optimizes impedance matching ($50\,\Omega$), resulting in the simulated return loss ($S_{11}$) of $-44\text{ dB}$ at $2.4\text{ GHz}$.
+
+### Visual Design Models
+
+| Hexagonal Fractal Patch Layout (Iteration 2) | Proposed Antenna Design with Dimension Variables |
+| :---: | :---: |
+| ![Hexagonal Fractal Patch](img/fig_4_4_hexagonal_fractal_patch.png) | ![Proposed Antenna Design](img/fig_4_5_proposed_antenna_design.png) |
+
