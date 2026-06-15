@@ -6,11 +6,11 @@ based on the simulation data presented in the project report.
 """
 
 import os
-import numpy as np
-import matplotlib
+import numpy as np  # type: ignore
+import matplotlib  # type: ignore
 
 matplotlib.use("Agg")  # Set non-interactive backend for headless CI
-import matplotlib.pyplot as plt  # noqa: E402
+import matplotlib.pyplot as plt  # type: ignore # noqa: E402
 
 
 def create_directory(path):

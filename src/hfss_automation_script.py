@@ -16,7 +16,7 @@ import math
 
 # Try importing HFSS scripting engine modules if running inside the engine
 try:
-    import ScriptEnv  # noqa: F401
+    import ScriptEnv  # type: ignore # noqa: F401
 
     # Fetch oAnsoftApp dynamically to prevent IDE warnings/errors about unresolved reference
     oAnsoftApp = globals().get("oAnsoftApp")
