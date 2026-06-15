@@ -18,15 +18,19 @@ import math
 try:
     import ScriptEnv  # noqa: F401
 
-    # Initialize the desktop object
-    oAnsoftApp.SetCurrentProject("WPT_Fractal_Antenna")  # noqa: F821
-    oDesktop = oAnsoftApp.GetAppDesktop()  # noqa: F821
+    # Fetch oAnsoftApp dynamically to prevent IDE warnings/errors about unresolved reference
+    oAnsoftApp = globals().get("oAnsoftApp")
+    if oAnsoftApp is None:
+        raise NameError("oAnsoftApp not found in global scope")
+
+    oAnsoftApp.SetCurrentProject("WPT_Fractal_Antenna")
+    oDesktop = oAnsoftApp.GetAppDesktop()
     oProject = oDesktop.NewProject()
     oProject.InsertDesign("HFSS", "Hexagonal_Fractal_Design", "Driven Terminal")
     oDesign = oProject.GetActiveDesign()
     oEditor = oDesign.SetActiveEditor("3D Modeler")
     IN_HFSS = True
-except (ImportError, NameError):
+except (ImportError, NameError, AttributeError):
     # If running externally, this file serves as a template/placeholder document
     IN_HFSS = False
 
