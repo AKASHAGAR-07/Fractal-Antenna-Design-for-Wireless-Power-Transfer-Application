@@ -4,7 +4,8 @@
 
 <div align="center">
 
-[![HFSS](https://img.shields.io/badge/HFSS-ANSYS_Simulation-red?style=for-the-badge&logo=ansys&logoColor=white)](https://www.ansys.com/products/electronics/ansys-hfss)
+[![ANSYS HFSS](https://img.shields.io/badge/ANSYS-HFSS_Simulation-red?style=for-the-badge&logo=ansys&logoColor=white)](https://www.ansys.com/products/electronics/ansys-hfss)
+[![Autodesk Fusion 360](https://img.shields.io/badge/Autodesk-Fusion_360-orange?style=for-the-badge&logo=autodesk&logoColor=white)](https://www.autodesk.com/products/fusion-360/overview)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![WPT](https://img.shields.io/badge/WPT-Wireless_Power_Transfer-blue?style=for-the-badge)]()
 [![ECE Project](https://img.shields.io/badge/ECE-Project-8b5cf6?style=for-the-badge)]()
