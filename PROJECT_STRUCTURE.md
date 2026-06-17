@@ -36,9 +36,7 @@ fractal-antenna-wpt/
 │       ├── s11_plot.png                        # Recreated S11 curve
 │       ├── vswr_plot.png                       # Recreated VSWR curve
 │       ├── e_plane_pattern.png                 # Recreated E-Plane polar plot
-│       ├── h_plane_pattern.png                 # Recreated H-Plane polar plot
-│       ├── gain_frequency_plot.png             # Recreated gain frequency sweep
-│       └── realized_gain_3d.png                # Recreated 3D gain envelope
+│       └── h_plane_pattern.png                 # Recreated H-Plane polar plot
 │
 ├── models/                    # Modeling guides and placeholders
 │   ├── README.md              # Recreating model in CAD and HFSS
