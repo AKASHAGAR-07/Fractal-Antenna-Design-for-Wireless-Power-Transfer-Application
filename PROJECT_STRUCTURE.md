@@ -32,21 +32,12 @@ fractal-antenna-wpt/
 │       ├── fig_5_3_radiation_e_plane.png       # 2D polar plot E-Plane
 │       ├── fig_5_4_gain_e_plane.png            # Gain vs frequency plot
 │       ├── fig_5_5_radiation_h_plane.png       # 2D polar plot H-Plane
-│       ├── fig_5_6_polar_h_plane.png           # 3D realized gain pattern
-│       ├── s11_plot.png                        # Recreated S11 curve
-│       ├── vswr_plot.png                       # Recreated VSWR curve
-│       ├── e_plane_pattern.png                 # Recreated E-Plane polar plot
-│       └── h_plane_pattern.png                 # Recreated H-Plane polar plot
+│       └── fig_5_6_polar_h_plane.png           # 3D realized gain pattern
 │
 ├── models/                    # Modeling guides and placeholders
 │   ├── README.md              # Recreating model in CAD and HFSS
 │   ├── fusion360_model_placeholder.txt  # Fusion 360 layout steps
 │   └── hfss_project_placeholder.txt     # HFSS project properties
-│
-├── src/                       # Simulation automation and mathematical scripts
-│   ├── antenna_calculator.py  # Python script to calculate microstrip patch dims
-│   ├── plot_results.py        # Generates all performance plots
-│   └── hfss_automation_script.py # Automated HFSS 3D model builder script
 │
 └── DOCUMENTS/                 # Academic files
     ├── Project_Report.pdf     # Scanned final ECE project report
@@ -61,5 +52,4 @@ fractal-antenna-wpt/
 - **ASSETS/**: Houses graphics to enhance the repository profile view, including the main project banner, GitHub social preview card, and CAD dimensional layout.
 - **docs/**: The main documentation directory hosting markdown files detailing hardware specifications, design methodology, and simulation results.
 - **docs/img/**: Contains return loss curves, radiation sweeps, gain charts, and photographs of the fabricated physical prototype.
-- **src/**: Python scripts that calculate patch dimensions, plot 2D/3D radiation envelopes, and execute automated geometries inside ANSYS Electronic Desktop.
 - **DOCUMENTS/**: Stores the full project report, project presentation slide deck, and formal abstract.

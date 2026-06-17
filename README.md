@@ -5,7 +5,6 @@
 <div align="center">
 
 [![HFSS](https://img.shields.io/badge/HFSS-ANSYS_Simulation-red?style=for-the-badge&logo=ansys&logoColor=white)](https://www.ansys.com/products/electronics/ansys-hfss)
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![WPT](https://img.shields.io/badge/WPT-Wireless_Power_Transfer-blue?style=for-the-badge)]()
 [![ECE Project](https://img.shields.io/badge/ECE-Project-8b5cf6?style=for-the-badge)]()
@@ -39,16 +38,15 @@ This project was developed as a Bachelor of Engineering (B.E.) Final Year Projec
 12. [Software Requirements](#12-software-requirements)
 13. [Working Principle](#13-working-principle)
 14. [Flowchart](#14-flowchart)
-15. [Arduino / Python Script Explanations](#15-arduino--python-script-explanations)
-16. [Results and Discussion](#16-results-and-discussion)
-17. [Advantages](#17-advantages)
-18. [Applications](#18-applications)
-19. [Future Scope](#19-future-scope)
-20. [Conclusion](#20-conclusion)
-21. [References](#21-references)
-22. [Team Members](#22-team-members)
-23. [Project Guide](#23-project-guide)
-24. [Acknowledgements](#24-acknowledgements)
+15. [Results and Discussion](#15-results-and-discussion)
+16. [Advantages](#16-advantages)
+17. [Applications](#17-applications)
+18. [Future Scope](#18-future-scope)
+19. [Conclusion](#19-conclusion)
+20. [References](#20-references)
+21. [Team Members](#21-team-members)
+22. [Project Guide](#22-project-guide)
+23. [Acknowledgements](#23-acknowledgements)
 
 ---
 
@@ -152,7 +150,6 @@ Both bottom ground (thickness = 0.07 mm) and top radiator (thickness = 0.05 mm) 
 ## 12. Software Requirements
 - **ANSYS HFSS**: High Frequency Structure Simulator for 3D electromagnetic modeling.
 - **Autodesk Fusion 360**: CAD tool for creating 3D geometries.
-- **Python (3.8+)**: For running calculator and results plotting utilities.
 
 ---
 
@@ -183,15 +180,7 @@ graph TD
 
 ---
 
-## 15. Arduino / Python Script Explanations
-Python utilities are provided in `src/` to automate the workflow:
-- [src/antenna_calculator.py](src/antenna_calculator.py): Interactive command-line script to calculate standard patch dimensions using dielectric equations.
-- [src/plot_results.py](src/plot_results.py): Recreates Return Loss ($S_{11}$), VSWR, Realized Gain vs Frequency, and 2D/3D radiation envelopes, exporting them as PNGs.
-- [src/hfss_automation_script.py](src/hfss_automation_script.py): Runs inside the ANSYS Electronics Desktop scripting environment to automatically build the 3D model.
-
----
-
-## 16. Summary of Results
+## 15. Results and Discussion
 
 ### 1. Return Loss ($S_{11}$)
 At the operating frequency of $2.4\text{ GHz}$, the antenna achieves a simulated return loss of **$-44\text{ dB}$**, indicating extremely low power reflections (less than $0.01\%$) and optimal energy delivery.
@@ -220,52 +209,52 @@ The antenna was fabricated and tested using standard single-sided PCB milling:
 
 ---
 
-## 17. Advantages
+## 16. Advantages
 - **Compact Footprint**: 32% overall surface area reduction compared to rectangular patches.
 - **High Energy Transfer**: Low reflections (99.996% accepted power) improve WPT harvesting rates.
 - **Stable H-Plane Pattern**: Near-omnidirectional H-plane profile accommodates orientation variations.
 
 ---
 
-## 18. Applications
+## 17. Applications
 - **Wireless Power Transfer (WPT)**: Capturing 2.4 GHz microwave energy.
 - **IoT Sensor Nodes**: Battery-free sensor operation.
 - **RF Energy Harvesting**: Harvesting ambient Wi-Fi/Bluetooth signals.
 
 ---
 
-## 19. Future Scope
+## 18. Future Scope
 - **Rectenna Integration**: Add a Schottky diode rectifying circuit directly on the same substrate.
 - **Multi-Band Operation**: Tune the fractal slot coordinates to resonate concurrently at 2.4 GHz (Wi-Fi) and 5.8 GHz.
 - **Array Configuration**: Array multiple hexagonal elements to increase gain and power harvesting capacity.
 
 ---
 
-## 20. Conclusion
+## 19. Conclusion
 This project successfully demonstrates a compact Hexagonal Fractal Microstrip Patch Antenna optimized for Wireless Power Transfer in the 2.4 GHz band. The implementation of nested slots achieved a 32% footprint reduction while improving return loss to -44.0 dB and matching VSWR to 1.13.
 
 ---
 
-## 21. References
+## 20. References
 1. C. A. Balanis, *Antenna Theory: Analysis and Design*, 4th ed. Wiley, 2016.
 2. J. A. Landy, *Microstrip Patch Antennas for Wireless Power Transmission*, IEEE Transactions, 2018.
 3. Dr. K. Sakthisudhan, *Analysis of Fractal Geometries for Compact Radiators*, Dr. N.G.P. Institute of Technology, 2024.
 
 ---
 
-## 22. Team Members
+## 21. Team Members
 * **Akash V** (710723106007) - [akashveeramuthu07@gmail.com](mailto:akashveeramuthu07@gmail.com)
 * **Christina Joyce J** (710723106019) - [23ec019@drngpit.ac.in](mailto:23ec019@drngpit.ac.in)
 * **Gokul Midhun M N** (710723106031) - [23ec031@drngpit.ac.in](mailto:23ec031@drngpit.ac.in)
 
 ---
 
-## 23. Project Guide
+## 22. Project Guide
 * **Dr. K. Sakthisudhan** M.E., Ph.D.
   Professor, Department of Electronics and Communication Engineering,
   Dr. N.G.P. Institute of Technology, Coimbatore.
 
 ---
 
-## 24. Acknowledgements
+## 23. Acknowledgements
 We express our gratitude to **Dr. Nalla G. Palaniswami** (Chairman) and **Dr. Thavamani D. Palaniswami** (Secretary) for their support, and to **Dr. S.U. Prabha** (Principal) and **Dr. N. Chandrasekharan** (HOD, ECE) for providing the resources to carry out this project.
