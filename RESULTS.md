@@ -47,19 +47,9 @@ Plots the Voltage Standing Wave Ratio, measuring a minimal mismatch value of $1.
 
 ![VSWR Plot](docs/img/fig_5_2_vswr.png)
 
-### 3. Realized Gain vs Frequency
-Plots the realized gain across the frequency sweep, peaking at $2.1\text{ dBi}$ at $2.40\text{ GHz}$:
-
-![Realized Gain Plot](docs/img/fig_5_4_gain_e_plane.png)
-
-### 4. 2D Polar Radiation Patterns
+### 3. 2D Polar Radiation Patterns (E-Plane & H-Plane)
 Shows the directional E-plane and omnidirectional H-plane profiles:
 
 | E-Plane Pattern | H-Plane Pattern |
 | :---: | :---: |
 | ![E-Plane](docs/img/fig_5_3_radiation_e_plane.png) | ![H-Plane](docs/img/fig_5_5_radiation_h_plane.png) |
-
-### 5. 3D Realized Gain Radiation Pattern
-3D visualization of the broadside radiation dome of the antenna:
-
-![3D Polar Pattern](docs/img/fig_5_6_polar_h_plane.png)

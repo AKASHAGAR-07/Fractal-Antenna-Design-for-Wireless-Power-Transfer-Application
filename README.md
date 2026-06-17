@@ -191,23 +191,25 @@ Python utilities are provided in `src/` to automate the workflow:
 
 ---
 
-## 16. Results and Discussion
-Simulation sweeps validated the performance of the Iteration-2 design:
-- **Return Loss ($S_{11}$)**: Reaches **$-44\text{ dB}$** at $2.4\text{ GHz}$, translating to an accepted power rate of **$99.996\%$**.
-- **VSWR**: Value of **$1.13$** at resonance, indicating near-perfect impedance matching.
-- **Bandwidth**: 10-dB impedance bandwidth is **$120\text{ MHz}$**.
+## 16. Summary of Results
 
-| Return Loss S11 | VSWR Plot |
-| :---: | :---: |
-| ![Return Loss](docs/img/fig_5_1_return_loss.png) | ![VSWR Plot](docs/img/fig_5_2_vswr.png) |
+### 1. Return Loss ($S_{11}$)
+At the operating frequency of $2.4\text{ GHz}$, the antenna achieves a simulated return loss of **$-44\text{ dB}$**, indicating extremely low power reflections (less than $0.01\%$) and optimal energy delivery.
 
-| E-Plane Pattern | Gain Plot E-Plane |
-| :---: | :---: |
-| ![E-Plane Radiation](docs/img/fig_5_3_radiation_e_plane.png) | ![Gain Plot E-Plane](docs/img/fig_5_4_gain_e_plane.png) |
+![Return Loss S11 vs Frequency](docs/img/fig_5_1_return_loss.png)
 
-| H-Plane Pattern | 3D Polar Plot H-Plane |
+### 2. VSWR
+The Voltage Standing Wave Ratio is simulated to be **$1.13$** at the $2.4\text{ GHz}$ band, ensuring excellent impedance matching to a $50\,\Omega$ coaxial connector.
+
+![VSWR Plot](docs/img/fig_5_2_vswr.png)
+
+### 3. Radiation Patterns
+- **E-Plane (Electric Field)**: Highly symmetrical directional pattern around the major lobe, maximizing spatial gain.
+- **H-Plane (Magnetic Field)**: Near-omnidirectional profile, which is highly favorable for flexible power transfer alignments.
+
+| E-Plane Pattern | H-Plane Pattern |
 | :---: | :---: |
-| ![H-Plane Radiation](docs/img/fig_5_5_radiation_h_plane.png) | ![3D Polar H-Plane](docs/img/fig_5_6_polar_h_plane.png) |
+| ![E-Plane Radiation](docs/img/fig_5_3_radiation_e_plane.png) | ![H-Plane Radiation](docs/img/fig_5_5_radiation_h_plane.png) |
 
 ### 📸 Fabricated Prototype Reference
 The antenna was fabricated and tested using standard single-sided PCB milling:
