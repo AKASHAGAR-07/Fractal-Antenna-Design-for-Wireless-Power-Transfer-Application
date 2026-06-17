@@ -40,26 +40,26 @@ This confirms near-perfect energy transfer between the feedline and the fractal 
 ### 1. Return Loss ($S_{11}$) vs Frequency
 Plots the simulated reflection coefficient showing a deep resonant dip at $2.40\text{ GHz}$ dropping to $-44\text{ dB}$:
 
-![Return Loss S11](docs/img/s11_plot.png)
+![Return Loss S11](docs/img/fig_5_1_return_loss.png)
 
 ### 2. VSWR vs Frequency
 Plots the Voltage Standing Wave Ratio, measuring a minimal mismatch value of $1.13$ at resonance:
 
-![VSWR Plot](docs/img/vswr_plot.png)
+![VSWR Plot](docs/img/fig_5_2_vswr.png)
 
 ### 3. Realized Gain vs Frequency
 Plots the realized gain across the frequency sweep, peaking at $2.1\text{ dBi}$ at $2.40\text{ GHz}$:
 
-![Realized Gain Plot](docs/img/gain_frequency_plot.png)
+![Realized Gain Plot](docs/img/fig_5_4_gain_e_plane.png)
 
 ### 4. 2D Polar Radiation Patterns
 Shows the directional E-plane and omnidirectional H-plane profiles:
 
 | E-Plane Pattern | H-Plane Pattern |
 | :---: | :---: |
-| ![E-Plane](docs/img/e_plane_pattern.png) | ![H-Plane](docs/img/h_plane_pattern.png) |
+| ![E-Plane](docs/img/fig_5_3_radiation_e_plane.png) | ![H-Plane](docs/img/fig_5_5_radiation_h_plane.png) |
 
 ### 5. 3D Realized Gain Radiation Pattern
 3D visualization of the broadside radiation dome of the antenna:
 
-![3D Polar Pattern](docs/img/realized_gain_3d.png)
+![3D Polar Pattern](docs/img/fig_5_6_polar_h_plane.png)

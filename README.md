@@ -199,11 +199,15 @@ Simulation sweeps validated the performance of the Iteration-2 design:
 
 | Return Loss S11 | VSWR Plot |
 | :---: | :---: |
-| ![Return Loss](docs/img/s11_plot.png) | ![VSWR Plot](docs/img/vswr_plot.png) |
+| ![Return Loss](docs/img/fig_5_1_return_loss.png) | ![VSWR Plot](docs/img/fig_5_2_vswr.png) |
 
-| Realized Gain | 3D Radiation Pattern |
+| E-Plane Pattern | Gain Plot E-Plane |
 | :---: | :---: |
-| ![Realized Gain](docs/img/gain_frequency_plot.png) | ![3D Polar Plot](docs/img/realized_gain_3d.png) |
+| ![E-Plane Radiation](docs/img/fig_5_3_radiation_e_plane.png) | ![Gain Plot E-Plane](docs/img/fig_5_4_gain_e_plane.png) |
+
+| H-Plane Pattern | 3D Polar Plot H-Plane |
+| :---: | :---: |
+| ![H-Plane Radiation](docs/img/fig_5_5_radiation_h_plane.png) | ![3D Polar H-Plane](docs/img/fig_5_6_polar_h_plane.png) |
 
 ### 📸 Fabricated Prototype Reference
 The antenna was fabricated and tested using standard single-sided PCB milling:
