@@ -9,7 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![WPT](https://img.shields.io/badge/WPT-Wireless_Power_Transfer-blue?style=for-the-badge)]()
 [![ECE Project](https://img.shields.io/badge/ECE-Project-8b5cf6?style=for-the-badge)]()
-[![STEM Project](https://img.shields.io/badge/STEM-Project-10b981?style=for-the-badge)]()
+[![Mini Project](https://img.shields.io/badge/Mini-Project-0284c7?style=for-the-badge)]()
 
 </div>
 
