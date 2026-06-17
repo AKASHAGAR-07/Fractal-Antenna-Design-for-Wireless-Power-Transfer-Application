@@ -255,8 +255,8 @@ This project successfully demonstrates a compact Hexagonal Fractal Microstrip Pa
 
 ## 22. Team Members
 * **Akash V** (710723106007) - [akashveeramuthu07@gmail.com](mailto:akashveeramuthu07@gmail.com)
-* **Christina Joyce J** (710723106019)
-* **Gokul Midhun M N** (710723106031)
+* **Christina Joyce J** (710723106019) - [23ec019@drngpit.ac.in](mailto:23ec019@drngpit.ac.in)
+* **Gokul Midhun M N** (710723106031) - [23ec031@drngpit.ac.in](mailto:23ec031@drngpit.ac.in)
 
 ---
 
